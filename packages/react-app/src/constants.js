@@ -1,20 +1,675 @@
 // MY INFURA_ID, SWAP IN YOURS FROM https://infura.io/dashboard/ethereum
-export const INFURA_ID = "460f40a260564ac4a4f4b3fffb032dad";
+export const INFURA_ID = ""
 
 //MY ETHERSCAN_ID, SWAP IN YOURS FROM https://etherscan.io/myapikey
-export const ETHERSCAN_KEY = "PSW8C433Q667DVEX5BCRMGNAH9FSGFZ7Q8";
+export const ETHERSCAN_KEY = "PSW8C433Q667DVEX5BCRMGNAH9FSGFZ7Q8"
 
 //BLOCKNATIVE ID FOR Notify.js:
 export const BLOCKNATIVE_DAPPID = "0b58206a-f3c0-4701-a62f-73c7243e8c77"
 
-
 // EXTERNAL CONTRACTS
 
 // CLOVERS:
-export const NFT_CONTRACT_ADDRESS = "0xB55C5cAc5014C662fDBF21A2C59Cd45403C482Fd"
+export const NFT_CONTRACT_ADDRESS = "0x990efF367C6c4aece43c1E98099061c897730F27"
 
-export const NFT_CONTRACT_ABI = [{"constant":true,"inputs":[{"name":"_interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getBlockMinted","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint256"},{"name":"_token","type":"address"}],"name":"moveToken","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getKeep","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_tokenId","type":"uint256"}],"name":"approve","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"},{"name":"moves","type":"bytes28[2]"}],"name":"setCloverMoves","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"deleteClover","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"cloversController","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"moves","type":"bytes28[2]"}],"name":"getHash","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"pure","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"InterfaceId_ERC165","outputs":[{"name":"","type":"bytes4"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getReward","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint256"}],"name":"moveEth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_admin","type":"address"}],"name":"isAdmin","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_tokenId","type":"uint256"}],"name":"mint","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"admins","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_cloversMetadata","type":"address"}],"name":"updateCloversMetadataAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"exists","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSymmetries","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_newAdmin","type":"address"}],"name":"transferAdminship","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"implementation","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getCloverMoves","outputs":[{"name":"","type":"bytes28[2]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"unmint","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_previousAdmin","type":"address"}],"name":"renounceAdminship","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"clovers","outputs":[{"name":"keep","type":"bool"},{"name":"symmetries","type":"uint256"},{"name":"blockMinted","type":"uint256"},{"name":"rewards","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"renounceOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"},{"name":"value","type":"bool"}],"name":"setKeep","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getAllSymmetries","outputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tos","type":"address[]"},{"name":"_tokenIds","type":"uint256[]"},{"name":"_movess","type":"bytes28[2][]"},{"name":"_symmetries","type":"uint256[]"}],"name":"mintMany","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"cloversMetadata","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_cloversController","type":"address"}],"name":"updateCloversControllerAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_totalSymmetries","type":"uint256"},{"name":"RotSym","type":"uint256"},{"name":"Y0Sym","type":"uint256"},{"name":"X0Sym","type":"uint256"},{"name":"XYSym","type":"uint256"},{"name":"XnYSym","type":"uint256"}],"name":"setAllSymmetries","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_clubTokenController","type":"address"}],"name":"updateClubTokenController","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"},{"name":"_amount","type":"uint256"}],"name":"setReward","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"clubTokenController","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_tokenId","type":"uint256"},{"name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"getSymmetries","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint256"},{"name":"_token","type":"address"}],"name":"approveToken","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"name":"_infoUrl","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"},{"name":"_symmetries","type":"uint256"}],"name":"setSymmetries","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tokenId","type":"uint256"},{"name":"value","type":"uint256"}],"name":"setBlockMinted","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"name","type":"string"},{"name":"symbol","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousOwner","type":"address"}],"name":"OwnershipRenounced","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousOwner","type":"address"},{"indexed":true,"name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousAdmin","type":"address"}],"name":"AdminshipRenounced","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousAdmin","type":"address"},{"indexed":true,"name":"newAdmin","type":"address"}],"name":"AdminshipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":true,"name":"_tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_approved","type":"address"},{"indexed":true,"name":"_tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_owner","type":"address"},{"indexed":true,"name":"_operator","type":"address"},{"indexed":false,"name":"_approved","type":"bool"}],"name":"ApprovalForAll","type":"event"}]
-
+export const NFT_CONTRACT_ABI = [
+  {
+    inputs: [
+      { internalType: "address", name: "token_addr", type: "address" },
+      { internalType: "address", name: "art_proxy", type: "address" },
+    ],
+    stateMutability: "nonpayable",
+    type: "constructor",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "owner", type: "address" },
+      { indexed: true, internalType: "address", name: "approved", type: "address" },
+      { indexed: true, internalType: "uint256", name: "tokenId", type: "uint256" },
+    ],
+    name: "Approval",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "owner", type: "address" },
+      { indexed: true, internalType: "address", name: "operator", type: "address" },
+      { indexed: false, internalType: "bool", name: "approved", type: "bool" },
+    ],
+    name: "ApprovalForAll",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "delegator", type: "address" },
+      { indexed: true, internalType: "address", name: "fromDelegate", type: "address" },
+      { indexed: true, internalType: "address", name: "toDelegate", type: "address" },
+    ],
+    name: "DelegateChanged",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "delegate", type: "address" },
+      { indexed: false, internalType: "uint256", name: "previousBalance", type: "uint256" },
+      { indexed: false, internalType: "uint256", name: "newBalance", type: "uint256" },
+    ],
+    name: "DelegateVotesChanged",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "provider", type: "address" },
+      { indexed: false, internalType: "uint256", name: "tokenId", type: "uint256" },
+      { indexed: false, internalType: "uint256", name: "value", type: "uint256" },
+      { indexed: true, internalType: "uint256", name: "locktime", type: "uint256" },
+      { indexed: false, internalType: "enum VotingEscrow.DepositType", name: "deposit_type", type: "uint8" },
+      { indexed: false, internalType: "uint256", name: "ts", type: "uint256" },
+    ],
+    name: "Deposit",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: false, internalType: "uint256", name: "prevSupply", type: "uint256" },
+      { indexed: false, internalType: "uint256", name: "supply", type: "uint256" },
+    ],
+    name: "Supply",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "from", type: "address" },
+      { indexed: true, internalType: "address", name: "to", type: "address" },
+      { indexed: true, internalType: "uint256", name: "tokenId", type: "uint256" },
+    ],
+    name: "Transfer",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      { indexed: true, internalType: "address", name: "provider", type: "address" },
+      { indexed: false, internalType: "uint256", name: "tokenId", type: "uint256" },
+      { indexed: false, internalType: "uint256", name: "value", type: "uint256" },
+      { indexed: false, internalType: "uint256", name: "ts", type: "uint256" },
+    ],
+    name: "Withdraw",
+    type: "event",
+  },
+  {
+    inputs: [],
+    name: "DELEGATION_TYPEHASH",
+    outputs: [{ internalType: "bytes32", name: "", type: "bytes32" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "DOMAIN_TYPEHASH",
+    outputs: [{ internalType: "bytes32", name: "", type: "bytes32" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "MAX_DELEGATES",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "abstain",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_approved", type: "address" },
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+    ],
+    name: "approve",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "artProxy",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "attach",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "attachments",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_owner", type: "address" }],
+    name: "balanceOf",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_block", type: "uint256" },
+    ],
+    name: "balanceOfAtNFT",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "balanceOfNFT",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_t", type: "uint256" },
+    ],
+    name: "balanceOfNFTAt",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "block_number",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  { inputs: [], name: "checkpoint", outputs: [], stateMutability: "nonpayable", type: "function" },
+  {
+    inputs: [
+      { internalType: "address", name: "", type: "address" },
+      { internalType: "uint32", name: "", type: "uint32" },
+    ],
+    name: "checkpoints",
+    outputs: [{ internalType: "uint256", name: "timestamp", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_value", type: "uint256" },
+      { internalType: "uint256", name: "_lock_duration", type: "uint256" },
+    ],
+    name: "create_lock",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_value", type: "uint256" },
+      { internalType: "uint256", name: "_lock_duration", type: "uint256" },
+      { internalType: "address", name: "_to", type: "address" },
+    ],
+    name: "create_lock_for",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "decimals",
+    outputs: [{ internalType: "uint8", name: "", type: "uint8" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "delegatee", type: "address" }],
+    name: "delegate",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "delegatee", type: "address" },
+      { internalType: "uint256", name: "nonce", type: "uint256" },
+      { internalType: "uint256", name: "expiry", type: "uint256" },
+      { internalType: "uint8", name: "v", type: "uint8" },
+      { internalType: "bytes32", name: "r", type: "bytes32" },
+      { internalType: "bytes32", name: "s", type: "bytes32" },
+    ],
+    name: "delegateBySig",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "delegator", type: "address" }],
+    name: "delegates",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_value", type: "uint256" },
+    ],
+    name: "deposit_for",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "detach",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "epoch",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "getApproved",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "timestamp", type: "uint256" }],
+    name: "getPastTotalSupply",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "account", type: "address" },
+      { internalType: "uint256", name: "timestamp", type: "uint256" },
+    ],
+    name: "getPastVotes",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "account", type: "address" },
+      { internalType: "uint256", name: "timestamp", type: "uint256" },
+    ],
+    name: "getPastVotesIndex",
+    outputs: [{ internalType: "uint32", name: "", type: "uint32" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "account", type: "address" }],
+    name: "getVotes",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "get_last_user_slope",
+    outputs: [{ internalType: "int128", name: "", type: "int128" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_value", type: "uint256" },
+    ],
+    name: "increase_amount",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_lock_duration", type: "uint256" },
+    ],
+    name: "increase_unlock_time",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_owner", type: "address" },
+      { internalType: "address", name: "_operator", type: "address" },
+    ],
+    name: "isApprovedForAll",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_spender", type: "address" },
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+    ],
+    name: "isApprovedOrOwner",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "locked",
+    outputs: [
+      { internalType: "int128", name: "amount", type: "int128" },
+      { internalType: "uint256", name: "end", type: "uint256" },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "locked__end",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_from", type: "uint256" },
+      { internalType: "uint256", name: "_to", type: "uint256" },
+    ],
+    name: "merge",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "name",
+    outputs: [{ internalType: "string", name: "", type: "string" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "", type: "address" }],
+    name: "nonces",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "", type: "address" }],
+    name: "numCheckpoints",
+    outputs: [{ internalType: "uint32", name: "", type: "uint32" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "ownerOf",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "ownership_change",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "point_history",
+    outputs: [
+      { internalType: "int128", name: "bias", type: "int128" },
+      { internalType: "int128", name: "slope", type: "int128" },
+      { internalType: "uint256", name: "ts", type: "uint256" },
+      { internalType: "uint256", name: "blk", type: "uint256" },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_from", type: "address" },
+      { internalType: "address", name: "_to", type: "address" },
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+    ],
+    name: "safeTransferFrom",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_from", type: "address" },
+      { internalType: "address", name: "_to", type: "address" },
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "bytes", name: "_data", type: "bytes" },
+    ],
+    name: "safeTransferFrom",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_operator", type: "address" },
+      { internalType: "bool", name: "_approved", type: "bool" },
+    ],
+    name: "setApprovalForAll",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_proxy", type: "address" }],
+    name: "setArtProxy",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_team", type: "address" }],
+    name: "setTeam",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "address", name: "_voter", type: "address" }],
+    name: "setVoter",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "slope_changes",
+    outputs: [{ internalType: "int128", name: "", type: "int128" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "supply",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "bytes4", name: "_interfaceID", type: "bytes4" }],
+    name: "supportsInterface",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "symbol",
+    outputs: [{ internalType: "string", name: "", type: "string" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "team",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "token",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_owner", type: "address" },
+      { internalType: "uint256", name: "_tokenIndex", type: "uint256" },
+    ],
+    name: "tokenOfOwnerByIndex",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "tokenURI",
+    outputs: [{ internalType: "string", name: "", type: "string" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "totalSupply",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_block", type: "uint256" }],
+    name: "totalSupplyAt",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "t", type: "uint256" }],
+    name: "totalSupplyAtT",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "address", name: "_from", type: "address" },
+      { internalType: "address", name: "_to", type: "address" },
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+    ],
+    name: "transferFrom",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "user_point_epoch",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "", type: "uint256" },
+      { internalType: "uint256", name: "", type: "uint256" },
+    ],
+    name: "user_point_history",
+    outputs: [
+      { internalType: "int128", name: "bias", type: "int128" },
+      { internalType: "int128", name: "slope", type: "int128" },
+      { internalType: "uint256", name: "ts", type: "uint256" },
+      { internalType: "uint256", name: "blk", type: "uint256" },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "uint256", name: "_tokenId", type: "uint256" },
+      { internalType: "uint256", name: "_idx", type: "uint256" },
+    ],
+    name: "user_point_history__ts",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "version",
+    outputs: [{ internalType: "string", name: "", type: "string" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "voted",
+    outputs: [{ internalType: "bool", name: "", type: "bool" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "voter",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "voting",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_tokenId", type: "uint256" }],
+    name: "withdraw",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+]
 
 //NIFTY.INK MAINNET CONTRACTS
 /*
@@ -22,7 +677,6 @@ export const NFT_CONTRACT_ADDRESS = "0xc02697c417DdAcfbe5EdbF23eDad956BC883F4fb"
 
 export const NFT_CONTRACT_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"id","type":"uint256"},{"indexed":false,"internalType":"string","name":"inkUrl","type":"string"},{"indexed":false,"internalType":"string","name":"jsonUrl","type":"string"},{"indexed":false,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"bytes32","name":"msgId","type":"bytes32"}],"name":"mintedInk","type":"event"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"baseURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"bridgeContract","outputs":[{"internalType":"contract IAMB","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"bridgeContractAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"inkUrl","type":"string"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"inkTokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_inkUrl","type":"string"}],"name":"inkTokenCount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"mediatorContractOnOtherSide","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"messageFixed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"string","name":"inkUrl","type":"string"},{"internalType":"string","name":"jsonUrl","type":"string"}],"name":"mint","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"_txHash","type":"bytes32"}],"name":"requestFailedMessageFix","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"requestGasLimit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_bridgeContract","type":"address"}],"name":"setBridgeContract","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_mediatorContract","type":"address"}],"name":"setMediatorContractOnOtherSide","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_requestGasLimit","type":"uint256"}],"name":"setRequestGasLimit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"tokenInk","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}]
 */
-
 
 //NIFTY.INK xDAI CONTRACTS
 /*
@@ -39,8 +693,6 @@ export const NFT_CONTRACT_ABI = [{"inputs":[{"internalType":"string","name":"con
 
 */
 
-
-
 /* ETHERCARDS -- (another NFT example):
 
 export const NFT_CONTRACT_ADDRESS = "0x97CA7FE0b0288f5EB85F386FeD876618FB9b8Ab8"
@@ -49,89 +701,99 @@ export const NFT_CONTRACT_ABI = [{"inputs":[{"internalType":"contract IRNG","nam
 
 */
 
-export const NETWORK = (chainId)=>{
-  for(let n in NETWORKS){
-    if(NETWORKS[n].chainId==chainId){
+export const NETWORK = chainId => {
+  for (let n in NETWORKS) {
+    if (NETWORKS[n].chainId == chainId) {
       return NETWORKS[n]
     }
   }
 }
 
 export const NETWORKS = {
-    localhost: {
-        name: "localhost",
-        color: '#666666',
-        chainId: 31337,
-        blockExplorer: '',
-        rpcUrl: "http://" + window.location.hostname + ":8545",
-    },
-    mainnet: {
-        name: "mainnet",
-        color: '#ff8b9e',
-        chainId: 1,
-        rpcUrl: `https://mainnet.infura.io/v3/${INFURA_ID}`,
-        blockExplorer: "https://etherscan.io/",
-    },
-    kovan: {
-        name: "kovan",
-        color: '#7003DD',
-        chainId: 42,
-        rpcUrl: `https://kovan.infura.io/v3/${INFURA_ID}`,
-        blockExplorer: "https://kovan.etherscan.io/",
-        faucet: "https://gitter.im/kovan-testnet/faucet",//https://faucet.kovan.network/
-    },
-    rinkeby: {
-        name: "rinkeby",
-        color: '#e0d068',
-        chainId: 4,
-        rpcUrl: `https://rinkeby.infura.io/v3/${INFURA_ID}`,
-        faucet: "https://faucet.rinkeby.io/",
-        blockExplorer: "https://rinkeby.etherscan.io/",
-    },
-    ropsten: {
-        name: "ropsten",
-        color: '#F60D09',
-        chainId: 3,
-        faucet: "https://faucet.ropsten.be/",
-        blockExplorer: "https://ropsten.etherscan.io/",
-        rpcUrl: `https://ropsten.infura.io/v3/${INFURA_ID}`,
-    },
-    goerli: {
-        name: "goerli",
-        color: '#0975F6',
-        chainId: 5,
-        faucet: "https://goerli-faucet.slock.it/",
-        blockExplorer: "https://goerli.etherscan.io/",
-        rpcUrl: `https://goerli.infura.io/v3/${INFURA_ID}`,
-    },
-    xdai: {
-        name: "xdai",
-        color: '#48a9a6',
-        chainId: 100,
-        price: 1,
-        gasPrice:1000000000,
-        rpcUrl: "https://dai.poa.network",
-        faucet: "https://xdai-faucet.top/",
-        blockExplorer: "https://blockscout.com/poa/xdai/",
-    },
-    matic: {
-        name: "matic",
-        color: '#2bbdf7',
-        chainId: 137,
-        price: 1,
-        gasPrice:1000000000,
-        rpcUrl: "https://rpc-mainnet.maticvigil.com",
-        faucet: "https://faucet.matic.network/",
-        blockExplorer: "https://explorer-mainnet.maticvigil.com//",
-    },
-    mumbai: {
-        name: "mumbai",
-        color: '#92D9FA',
-        chainId: 80001,
-        price: 1,
-        gasPrice:1000000000,
-        rpcUrl: "https://rpc-mumbai.maticvigil.com",
-        faucet: "https://faucet.matic.network/",
-        blockExplorer: "https://mumbai-explorer.matic.today/",
-    }
+  localhost: {
+    name: "localhost",
+    color: "#666666",
+    chainId: 31337,
+    blockExplorer: "",
+    rpcUrl: "http://" + window.location.hostname + ":8545",
+  },
+  mainnet: {
+    name: "mainnet",
+    color: "#ff8b9e",
+    chainId: 1,
+    rpcUrl: `https://mainnet.infura.io/v3/${INFURA_ID}`,
+    blockExplorer: "https://etherscan.io/",
+  },
+  kovan: {
+    name: "kovan",
+    color: "#7003DD",
+    chainId: 42,
+    rpcUrl: `https://kovan.infura.io/v3/${INFURA_ID}`,
+    blockExplorer: "https://kovan.etherscan.io/",
+    faucet: "https://gitter.im/kovan-testnet/faucet", //https://faucet.kovan.network/
+  },
+  rinkeby: {
+    name: "rinkeby",
+    color: "#e0d068",
+    chainId: 4,
+    rpcUrl: `https://rinkeby.infura.io/v3/${INFURA_ID}`,
+    faucet: "https://faucet.rinkeby.io/",
+    blockExplorer: "https://rinkeby.etherscan.io/",
+  },
+  ropsten: {
+    name: "ropsten",
+    color: "#F60D09",
+    chainId: 3,
+    faucet: "https://faucet.ropsten.be/",
+    blockExplorer: "https://ropsten.etherscan.io/",
+    rpcUrl: `https://ropsten.infura.io/v3/${INFURA_ID}`,
+  },
+  goerli: {
+    name: "goerli",
+    color: "#0975F6",
+    chainId: 5,
+    faucet: "https://goerli-faucet.slock.it/",
+    blockExplorer: "https://goerli.etherscan.io/",
+    rpcUrl: `https://goerli.infura.io/v3/${INFURA_ID}`,
+  },
+  xdai: {
+    name: "xdai",
+    color: "#48a9a6",
+    chainId: 100,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://dai.poa.network",
+    faucet: "https://xdai-faucet.top/",
+    blockExplorer: "https://blockscout.com/poa/xdai/",
+  },
+  matic: {
+    name: "matic",
+    color: "#2bbdf7",
+    chainId: 137,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://rpc-mainnet.maticvigil.com",
+    faucet: "https://faucet.matic.network/",
+    blockExplorer: "https://explorer-mainnet.maticvigil.com//",
+  },
+  mumbai: {
+    name: "mumbai",
+    color: "#92D9FA",
+    chainId: 80001,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://rpc-mumbai.maticvigil.com",
+    faucet: "https://faucet.matic.network/",
+    blockExplorer: "https://mumbai-explorer.matic.today/",
+  },
+  canto: {
+    name: "canto",
+    color: "#92D9FA",
+    chainId: 7700,
+    price: 1,
+    gasPrice: 1000000000,
+    rpcUrl: "https://canto.neobase.one",
+    faucet: "https://faucet.matic.network/",
+    blockExplorer: "https://evm.explorer.canto.io",
+  },
 }
